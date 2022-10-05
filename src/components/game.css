@@ -1,0 +1,152 @@
+.gamediv{
+    position: absolute;
+   text-align: center;
+    justify-content: center;
+    background-color: white;
+    width: 100%;
+    height:100%;
+}
+
+.choice{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    margin-top: 50px;
+
+}
+
+.buttons{
+    background-color: white;
+    margin-top: 50px;
+}
+
+.userch{
+    background-color: white;
+    color: black;
+}
+
+.comch{
+    background-color: white;
+    color: black;
+}
+
+.score{
+    font-weight: bolder;
+    color: black;
+    background-color: white;
+    font-size: 50px;
+}
+
+.papers{
+    background-color: white;
+}
+.papers:before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:-100%;
+    width:100%;
+    height:4px;
+    background-color:rgb(255, 255, 255);
+    transition:all 1s;
+  }
+.papers:after{
+    content:'';
+    position:absolute;
+    bottom:0;
+    right:-100%;
+    width:100%;
+    height:4px;
+    background-color:rgb(0, 0, 0);
+    transition:all 1s;
+  }
+
+.scissors{
+    background-color: white;
+   
+}
+
+.scissors:before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:-100%;
+    width:100%;
+    height:4px;
+    background-color:rgb(255, 255, 255);
+    transition:all 1s;
+  }
+.scissors:after{
+    content:'';
+    position:absolute;
+    bottom:0;
+    right:-100%;
+    width:100%;
+    height:4px;
+    background-color:rgb(0, 0, 0);
+    transition:all 1s;
+  }
+
+
+.rocks{
+    background-color: white;
+   
+}
+.rocks:before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:-100%;
+    width:100%;
+    height:4px;
+    background-color:rgb(255, 255, 255);
+    transition:all 1s;
+  }
+.rocks:after{
+    content:'';
+    position:absolute;
+    bottom:0;
+    right:-100%;
+    width:100%;
+    height:4px;
+    background-color:rgb(0, 0, 0);
+    transition:all 1s;
+  }
+
+
+.reset{
+    position: relative;
+    background-color: white;
+    font-size: 30px;
+    left: 30px;
+}
+
+.highscr{
+    position: relative;
+    background-color: white;
+    color: black;
+    font-weight: bolder;
+}
+
+.reset:before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:-100%;
+    width:100%;
+    height:4px;
+    background-color:rgb(255, 255, 255);
+    transition:all 1s;
+}
+.reset:after{
+    content:'';
+    position:absolute;
+    bottom:0;
+    right:-100%;
+    width:100%;
+    height:4px;
+    background-color:rgb(0, 0, 0);
+    transition:all 1s;
+  }
