@@ -19,7 +19,7 @@ function App() {
     <div className="App">
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route Exact path="/" basename={process.env.PUBLIC_URL} element={<Home />} />
         <Route path="/game" element={<Game />} />
         <Route path="/about" element={<About />} />
         
