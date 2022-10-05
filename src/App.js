@@ -18,7 +18,7 @@ function App() {
     
     <Router basename={process.env.PUBLIC_URL}>
       <Routes>
-        <Route exact path="/rps" element={<Home />} />
+        <Route exact path="/" element={<Home />} />
         <Route path="/game" element={<Game />} />
         <Route path="/about" element={<About />} />
         
