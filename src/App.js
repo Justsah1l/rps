@@ -1,12 +1,10 @@
 import './App.css';
 import Game from './components/game';
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import {  BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from './home';
 import About from './components/about';
 
-function click (){
-  console.log("works");
-}
+
 
 
 function App() {
@@ -17,9 +15,10 @@ function App() {
    
     
     <div className="App">
-    <Router>
+    
+    <Router basename={process.env.PUBLIC_URL}>
       <Routes>
-        <Route Exact path="/" basename={process.env.PUBLIC_URL} element={<Home />} />
+        <Route exact path="/" element={<Home />} />
         <Route path="/game" element={<Game />} />
         <Route path="/about" element={<About />} />
         
@@ -27,6 +26,7 @@ function App() {
         
       </Routes>
     </Router>
+    
   </div>
     
   );
